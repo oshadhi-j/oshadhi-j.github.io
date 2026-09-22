@@ -1,376 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>P. Oshadhi Janani | Portfolio</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f7f8fc;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: white;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            z-index: 1000;
-        }
-
-        nav .logo {
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-
-        nav ul li a:hover {
-            color: #4f46e5;
-        }
-
-        /* Hero */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 100px 20px 50px;
-            background: linear-gradient(135deg, #eef2ff, #ffffff);
-        }
-
-        .hero-content {
-            max-width: 850px;
-        }
-
-        .hero h1 {
-            font-size: 55px;
-            margin-bottom: 15px;
-        }
-
-        .hero h2 {
-            font-size: 24px;
-            font-weight: normal;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: #666;
-            max-width: 700px;
-            margin: auto;
-        }
-
-        .buttons {
-            margin-top: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            margin: 5px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            border: 2px solid #4f46e5;
-        }
-
-        .btn-primary {
-            background: #4f46e5;
-            color: white;
-        }
-
-        .btn-secondary {
-            color: #4f46e5;
-            background: white;
-        }
-
-        /* Sections */
-        section {
-            padding: 80px 10%;
-        }
-
-        section h2 {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 40px;
-        }
-
-        .about {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-            font-size: 18px;
-            color: #555;
-        }
-
-        /* Education */
-        .education-container {
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .education-card {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
-        }
-
-        .education-card h3 {
-            color: #4f46e5;
-            margin-bottom: 8px;
-        }
-
-        /* Projects */
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .project-card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
-            transition: transform 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-card h3 {
-            color: #4f46e5;
-            margin-bottom: 12px;
-        }
-
-        .project-card p {
-            color: #666;
-        }
-
-        .project-tools {
-            margin-top: 15px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        /* Skills */
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .skill {
-            background: white;
-            padding: 12px 20px;
-            border-radius: 25px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-            font-weight: 500;
-        }
-
-        /* Certificates */
-        .certificates {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .certificate {
-            background: white;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 10px;
-        }
-
-        /* Contact */
-        .contact {
-            text-align: center;
-        }
-
-        .contact p {
-            margin: 10px;
-            font-size: 17px;
-        }
-
-        .contact a {
-            color: #4f46e5;
-            text-decoration: none;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #111827;
-            color: white;
-        }
-
-        /* Mobile */
-        @media (max-width: 700px) {
-
-            nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            nav ul {
-                gap: 12px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .hero h1 {
-                font-size: 40px;
-            }
-
-            .hero h2 {
-                font-size: 20px;
-            }
-
-            section {
-                padding: 60px 6%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Navigation -->
-<nav>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Oshadhi Janani</div>
 
-    <div class="logo">
-        Oshadhi Janani
-    </div>
-
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-
-</nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
 
-<!-- Hero Section -->
-<section class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
 
-    <div class="hero-content">
+        <div class="hero-text">
 
-        <h1>P. Oshadhi Janani</h1>
+            <p class="hello">HELLO, I'M</p>
 
-        <h2>
-            Mathematics & Statistics Undergraduate |
-            Applied Data Analysis
-        </h2>
+            <h1>P. Oshadhi Janani</h1>
 
-        <p>
-            Undergraduate student interested in statistics, data analytics,
-            quantitative problem solving and applying statistical methods
-            to real-world problems.
-        </p>
+            <h2>
+                Mathematics & Statistics Undergraduate
+            </h2>
 
-        <div class="buttons">
+            <p>
+                Applied Data Analysis | Data & Analytics Enthusiast
+            </p>
 
-            <a href="#projects" class="btn btn-primary">
-                View My Projects
-            </a>
+            <div class="buttons">
 
-            <a href="#contact" class="btn btn-secondary">
-                Contact Me
-            </a>
+                <a href="cv/CV.pdf" class="btn" target="_blank">
+                    View My CV
+                </a>
+
+                <a href="#contact" class="btn secondary">
+                    Contact Me
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
 
-</section>
+        <!-- Your Photo -->
+        <div class="hero-image">
+
+            <img src="images/profile.jpg"
+                 alt="P. Oshadhi Janani">
+
+        </div>
+
+    </section>
 
 
-<!-- About -->
-<section id="about">
 
-    <h2>About Me</h2>
+    <!-- About -->
+    <section id="about">
 
-    <div class="about">
+        <h2 class="section-title">About Me</h2>
 
-        <p>
-            I am an undergraduate student at the University of
-            Sri Jayewardenepura, studying Mathematics, Statistics and
-            Chemistry. I am also pursuing an external degree in
-            Applied Data Analysis at the University of Colombo.
-        </p>
+        <p class="about-text">
 
-        <br>
+            I am an undergraduate student studying Mathematics, Statistics
+            and Chemistry at the University of Sri Jayewardenepura, while
+            also pursuing an external degree in Applied Data Analysis at
+            the University of Colombo.
 
-        <p>
+            <br><br>
+
             I am interested in statistics, data analysis, quantitative
-            problem solving and using data-driven approaches to
-            understand real-world problems.
+            problem solving and applying analytical techniques to real-world
+            problems. I am continuously developing my skills in statistical
+            analysis, data visualization and programming.
+
         </p>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- Education -->
-<section id="education">
 
-    <h2>Education</h2>
+    <!-- Education -->
+    <section id="education">
 
-    <div class="education-container">
+        <h2 class="section-title">Education</h2>
+
 
         <div class="education-card">
 
-            <h3>
-                University of Sri Jayewardenepura
-            </h3>
+            <h3>University of Sri Jayewardenepura</h3>
 
             <p>
-                Bachelor of Science Undergraduate
-            </p>
-
-            <p>
-                Mathematics, Statistics & Chemistry
+                Undergraduate Degree in Mathematics, Statistics and Chemistry
             </p>
 
         </div>
@@ -378,9 +115,7 @@
 
         <div class="education-card">
 
-            <h3>
-                University of Colombo
-            </h3>
+            <h3>University of Colombo</h3>
 
             <p>
                 External Degree in Applied Data Analysis
@@ -388,211 +123,206 @@
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- Projects -->
-<section id="projects">
 
-    <h2>Projects</h2>
+    <!-- Skills -->
+    <section id="skills">
 
-    <div class="projects">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-container">
+
+            <span>Statistics</span>
+            <span>Data Analysis</span>
+            <span>R</span>
+            <span>Python</span>
+            <span>Excel</span>
+            <span>Power BI</span>
+            <span>Minitab</span>
+            <span>C++</span>
+            <span>Data Visualization</span>
+            <span>Statistical Modelling</span>
+
+        </div>
+
+    </section>
 
 
-        <!-- Project 1 -->
-        <div class="project-card">
 
-            <h3>
-                Stroke Risk Analysis
-            </h3>
+    <!-- Projects -->
+    <section id="projects">
 
-            <p>
-                Analyzed factors associated with stroke events using
-                statistical analysis and logistic regression.
-                Explored variables such as age, hypertension,
-                heart disease, glucose level and BMI.
-            </p>
+        <h2 class="section-title">Projects</h2>
 
-            <div class="project-tools">
-                Tools: Minitab | Statistics | Data Analysis
+
+        <div class="project-container">
+
+
+            <!-- Project 1 -->
+            <div class="project-card">
+
+                <h3>Mahapola Scholarship Analysis</h3>
+
+                <p>
+
+                    A statistical analysis project investigating factors
+                    related to the misuse of Mahapola scholarships using
+                    survey data.
+
+                </p>
+
+                <a href="projects/mahapola-analysis/"
+                   target="_blank">
+
+                    View Project →
+
+                </a>
+
             </div>
 
-        </div>
 
 
-        <!-- Project 2 -->
-        <div class="project-card">
+            <!-- Project 2 -->
+            <div class="project-card">
 
-            <h3>
-                Mahapola Scholarship Study
-            </h3>
+                <h3>Stroke Risk Analysis</h3>
 
-            <p>
-                Conducted a statistical study investigating factors
-                related to the misuse of Mahapola scholarship benefits
-                using questionnaire-based data.
-            </p>
+                <p>
 
-            <div class="project-tools">
-                Tools: Statistics | Survey Analysis | Excel
+                    Statistical analysis of factors associated with
+                    stroke events using exploratory analysis and
+                    logistic regression.
+
+                </p>
+
+                <a href="projects/stroke-analysis/"
+                   target="_blank">
+
+                    View Project →
+
+                </a>
+
             </div>
 
-        </div>
 
 
-        <!-- Project 3 -->
-        <div class="project-card">
+            <!-- Project 3 -->
+            <div class="project-card">
 
-            <h3>
-                Data Visualization Dashboard
-            </h3>
+                <h3>Power BI Dashboard</h3>
 
-            <p>
-                Developed an interactive dashboard to explore data,
-                identify patterns and communicate analytical findings
-                through visualizations.
-            </p>
+                <p>
 
-            <div class="project-tools">
-                Tools: Power BI | Excel | Data Visualization
+                    A data visualization project using Power BI to
+                    explore patterns, trends and key insights from
+                    a real-world dataset.
+
+                </p>
+
+                <a href="#" target="_blank">
+
+                    View Project →
+
+                </a>
+
             </div>
 
+
         </div>
 
+    </section>
 
-        <!-- Project 4 -->
-        <div class="project-card">
 
-            <h3>
-                Statistical Analysis Projects
-            </h3>
 
-            <p>
-                Completed statistical analyses involving regression,
-                hypothesis testing, ANOVA, chi-square tests,
-                probability and experimental design.
-            </p>
+    <!-- Certificates -->
+    <section id="certificates">
 
-            <div class="project-tools">
-                Tools: Minitab | R | Statistics
+        <h2 class="section-title">Certificates</h2>
+
+        <div class="certificate-container">
+
+
+            <div class="certificate-card">
+
+                <h3>Data Analysis Certificate</h3>
+
+                <a href="certificates/data-analysis.pdf"
+                   target="_blank">
+
+                    View Certificate →
+
+                </a>
+
             </div>
 
-        </div>
 
-    </div>
+            <div class="certificate-card">
 
-</section>
+                <h3>Python Certificate</h3>
 
+                <a href="certificates/python.pdf"
+                   target="_blank">
 
-<!-- Skills -->
-<section id="skills">
+                    View Certificate →
 
-    <h2>Skills</h2>
+                </a>
 
-    <div class="skills">
+            </div>
 
-        <div class="skill">Statistics</div>
-
-        <div class="skill">Data Analysis</div>
-
-        <div class="skill">Mathematics</div>
-
-        <div class="skill">Minitab</div>
-
-        <div class="skill">R</div>
-
-        <div class="skill">Python</div>
-
-        <div class="skill">Excel</div>
-
-        <div class="skill">Power BI</div>
-
-        <div class="skill">Data Visualization</div>
-
-        <div class="skill">Statistical Modelling</div>
-
-    </div>
-
-</section>
-
-
-<!-- Certificates -->
-<section id="certificates">
-
-    <h2>Certificates & Achievements</h2>
-
-    <div class="certificates">
-
-        <div class="certificate">
-
-            <h3>Certificate / Course Name</h3>
-
-            <p>
-                Add your certificate or course details here.
-            </p>
 
         </div>
 
-
-        <div class="certificate">
-
-            <h3>Achievement / Competition</h3>
-
-            <p>
-                Add your academic achievements, competitions,
-                workshops or extracurricular activities here.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
 
-<!-- Contact -->
-<section id="contact">
 
-    <h2>Contact Me</h2>
+    <!-- Contact -->
+    <section id="contact">
 
-    <div class="contact">
+        <h2 class="section-title">Let's Connect</h2>
 
         <p>
-            📧 Email:
-            <a href="mailto:your-email@example.com">
-                your-email@example.com
-            </a>
+            Feel free to connect with me through LinkedIn or GitHub.
         </p>
+
+
+        <div class="contact-buttons">
+
+            <a href="YOUR_LINKEDIN_LINK"
+               target="_blank"
+               class="btn">
+
+                LinkedIn
+
+            </a>
+
+
+            <a href="YOUR_GITHUB_LINK"
+               target="_blank"
+               class="btn">
+
+                GitHub
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
 
         <p>
-            💼 LinkedIn:
-            <a href="YOUR_LINKEDIN_URL" target="_blank">
-                LinkedIn Profile
-            </a>
+            © 2026 P. Oshadhi Janani. All Rights Reserved.
         </p>
 
-        <p>
-            💻 GitHub:
-            <a href="https://github.com/YOUR_USERNAME" target="_blank">
-                GitHub Profile
-            </a>
-        </p>
+    </footer>
 
-    </div>
-
-</section>
-
-
-<!-- Footer -->
-<footer>
-
-    <p>
-        © 2026 P. Oshadhi Janani | Portfolio
-    </p>
-
-</footer>
 
 </body>
 </html>
+
